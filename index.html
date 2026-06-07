@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스마트 분리수거 도우미</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 카카오맵 API -->
+    <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=여기에_본인_API키"></script>
+</head>
+
+<body>
+
+<header>
+    <h1>♻ 스마트 분리수거 도우미</h1>
+    <p>내 주변 분리수거장을 찾아보세요.</p>
+</header>
+
+<section class="controls">
+    <button onclick="findMyLocation()">
+        현재 위치 찾기
+    </button>
+</section>
+
+<section id="nearestInfo">
+    아직 위치를 조회하지 않았습니다.
+</section>
+
+<div id="map"></div>
+
+<footer>
+    <p>2026 창의설계 프로젝트</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
